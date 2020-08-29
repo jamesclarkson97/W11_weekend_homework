@@ -1,4 +1,5 @@
 public enum PlaneType {
+    NOPE(1, 10),
     SMALLEST(20, 200),
     SMALL(50, 500),
     MEDIUM(100, 1000),
@@ -11,5 +12,13 @@ public enum PlaneType {
     PlaneType(int capacity, int totalWeight) {
         this.capacity = capacity;
         this.totalWeight = totalWeight;
+    }
+
+    public int getCapacity() {
+        return capacity;
+    }
+
+    public int getTotalWeight() {
+        return totalWeight;
     }
 }
