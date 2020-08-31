@@ -31,6 +31,23 @@ public class PassengerTest {
     }
 
     @Test
+    public void hasSeatNumber() {
+        assertEquals(0, passenger.getSeatNumber());
+    }
+
+//    @Test
+//    public void hasNewSeatNumber() {
+//        flight.bookPassenger(passenger);
+//        System.out.println(passenger.getSeatNumber());
+//        flight.bookPassenger(passenger);
+//        System.out.println(passenger.getSeatNumber());
+//        flight.bookPassenger(passenger);
+//        System.out.println(passenger.getSeatNumber());
+//        flight.bookPassenger(passenger);
+//        System.out.println(passenger.getSeatNumber());
+//    }
+
+    @Test
     public void hasNoFLight() {
         assertEquals(null, passenger.getFlight());
     }

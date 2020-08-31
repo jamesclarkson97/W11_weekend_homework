@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.Date;
+import java.lang.Math;
 
 public class Flight {
     private ArrayList<Passenger> passengers;
@@ -53,6 +54,7 @@ public class Flight {
         if (this.passengers.size() < capacity) {
             this.passengers.add(passenger);
             passenger.setFlight(this);
+//            passenger.setSeatNumber((int) Math.random()*(capacity+1));
         }
     }
 }
